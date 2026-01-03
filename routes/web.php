@@ -7,3 +7,4 @@ Route::get('/', function () {
 });
 
 Route::get('/contacts', [App\Http\Controllers\ContactController::class, 'index'])->name('contacts.index');
+Route::post('/contacts', [App\Http\Controllers\ContactController::class, 'store'])->name('contacts.store');

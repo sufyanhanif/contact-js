@@ -10,6 +10,26 @@
     <h1 class="text-3xl font-bold underline">
       Hello world!
     </h1>
+    <form action="{{ route('contacts.store') }}" method="POST">
+    @csrf
+
+    <div>
+        <label>Nama</label>
+        <input type="text" name="name" required>
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input type="email" name="email">
+    </div>
+
+    <div>
+        <label>No HP</label>
+        <input type="text" name="phone">
+    </div>
+    <button type="submit">Tambah Contact</button>
+</form>
+
     <div class="flex justify-center">
     <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-6  ">
     @foreach($contacts as $contact)
