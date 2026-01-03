@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Contact extends Model
 {
-     use HasFactory;
 
     // Field yang boleh diisi via form / API
     protected $fillable = [
