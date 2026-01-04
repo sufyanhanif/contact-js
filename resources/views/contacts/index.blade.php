@@ -6,10 +6,9 @@
     <title>Contact</title>
     @vite('resources/css/app.css')
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+<body class="min-h-screen bg-gradient-to-br from-[#B6E8E2] to-[#4ED6CC] h-screen0">
+   
+<!--   
     <form action="{{ route('contacts.store') }}" method="POST">
     @csrf
 
@@ -28,9 +27,9 @@
         <input type="text" name="phone">
     </div>
     <button type="submit">Tambah Contact</button>
-</form>
+</form> -->
 
-    <div class="flex justify-center">
+    <!-- <div class="flex justify-center">
     <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-6  ">
     @foreach($contacts as $contact)
         <li class="bg-white rounded-xl shadow-md p-5 hover:shadow-lg transition">
@@ -48,7 +47,7 @@
         </li>
     @endforeach
 </ul>
-</div>
+</div> -->
    
 
 </body>
